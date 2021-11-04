@@ -1,7 +1,7 @@
 module.exports = {
   mode:[],
   purge: [
-    './Public/**/*.html'
+    './docs/**/*.html'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {

@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Substack</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/d0a38b94be.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+
+
+
+
+
+<!--- main nav-->
+
+<div class="flex fixed items-center  w-full flex-row justify-between left-0  top-0 bg-white h-20  border-b p-6">
+
+
+
+  <!---div for logo and placeholder-->
+  <div class="md:flex md:flex-row sm:items-center lg:w-2/5 ">
+
+    <div class="mr-2"><img
+        src="https://cdn.substack.com/image/fetch/w_56,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Fsubstack-nomargin.png"
+        class="h-8 sm:w-8"> </div>
+
+
+    <div
+      class=" hidden md:flex md:flex-row md:items-center md:px-1 md:w-4/5  px-2 py-1  md:py-2 border border-gray-200 ml-4 flex-grow">
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 pointer-events-none mr-2" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+
+      <input type="text" name="Search " placeholder="Search for writers or publications..." autocomplete="off"
+        aria-label="Search for publishers"
+        class=" pr-3 pl-1 placeholder-gray-500 flex-grow focus:outline-none text black border-none font-light w-full text-orange-brown-50">
+
+
+    </div>
+
+  </div>
+
+
+  <!---div for reader, writers, sign up, login-->
+
+  <div class="flex flex-row items-center ">
+
+
+    <div class="hidden lg:block">
+      <div class="sm:relative inline-block text-left">
+        <div>
+          <button type="button" class="inline-flex  w-full  bg-white text-sm font-medium text-orange-brown-500 gap-y-4">
+            Readers
+            <!-- Heroicon name: solid/chevron-down -->
+            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+              aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="hidden lg:block">
+      <div class="sm: relative inline-block text-left">
+        <div>
+          <button type="button"
+            class="inline-flex  w-full  bg-white text-sm font-medium text-orange-brown-500 gap-y-4 pr-4 pl-4">
+            Writers
+            <!-- Heroicon name: solid/chevron-down -->
+            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+              aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="hidden lg:block">
+      <div class="sm: relative inline-block text-left">
+        <div>
+          <button type="button"
+            class="inline-flex w-full  bg-white text-sm font-medium text-orange-brown-500 gap-y-4 pr-4 pl-4">
+            Reasources
+            <!-- Heroicon name: solid/chevron-down -->
+            <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+              aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <!--sign up--->
+    <div class="  mr-8 bg-orange-500 text-white py-2 px-4 border-orange-500 rounded"><a href="#"> Sign up</a></div>
+
+    <!-- Login--->
+    <div class="hidden md:block md:text-orange-brown-50"> <a href="#"> Login </a></div>
+
+
+
+    <!-- Menu--->
+    <div class=" text-gray-400 sm:hidden"> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg></div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<!--main--->
+
+<body>
+  <div>
+    <div
+      class="fontFamily-Poppins  text-center  mt-44 flex justify-center flex-col fontFamily-Poppins text-orange-brown-500 gap-y-4">
+      <h1 class=" hidden sm:block text-7xl">The home for great writing.</h1>
+
+
+      <div class="sm:hidden">
+        <h1 class="text-5xl">The home for </h1>
+        <h1 class="text-5xl"> great writing.</h1>
+      </div>
+
+
+
+      <div class="hidden sm:block md:pt-8">
+        <p>We believe that what you read matters and great writing is valuable. We’re building a </p>
+        <p>future where writers can flourish by being paid directly by readers.</p>
+      </div>
+
+      <div class=" sm:hidden ">
+        <p>We believe that what you read matters and great</p>
+        <p> writing is valuable. We’re building a future where </p>
+        <p> writers can flourish by being paid directly by </p>
+        <p>readers.</p>
+      </div>
+    </div>
+
+    <div class="flex justify-center  mb-6">
+      <button class=" fontFamily-Poppins px-4 py-3 mt-10 bg-orange-500 text-white font-light"> Start writing</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class=" md:flex md:flex-row-reverse p-4 md:justify-center md:pr-64 md:pl-64">
+
+
+
+    <!--OPTIONS-->
+
+    <div>
+      <div class="space-y-2 space-x-2 ml-6">
+
+        <div class="flex space-x-2 md:mt-20 mt-6">
+          <button class="bg-white hover:bg-gray-200 text-black text-center h-10 px-4 rounded border ">
+            Featured
+          </button>
+
+          <button
+            class="rounded h-10 px-4 text-semibold bg-white text-orange-brown-500 gap-y-4  hover:bg-white duration-300 border focus:shadow-outline ">
+            Culture
+          </button>
+
+          <button
+            class="rounded h-10 px-4 text-semibold bg-white text-orange-brown-500 gap-y-4  hover:bg-white duration-300 border focus:shadow-outline md:hidden">
+            Politics
+          </button>
+
+        </div>
+
+
+        <div class="md:flex md:flex-row md:space-x-2 hidden ">
+          <button
+            class=" rounded h-10 px-4 text-semibold bg-white text-orange-brown-500 gap-y-4  hover:bg-white duration-300 border focus:shadow-outline ">
+            Politics
+          </button>
+
+          <button
+            class="rounded h-10 px-4 text-semibold bg-white text-orange-brown-500 gap-y-4  hover:bg-white duration-300 border focus:shadow-outline ">
+            Technology
+          </button>
+
+        </div>
+
+
+        <div class="flex space-x-2 md:hidden">
+
+
+          <button
+            class="rounded h-10 px-4 text-semibold bg-white text-orange-brown-500 gap-y-4  hover:bg-white duration-300 border focus:shadow-outline md:hidden">
+            Technology
+          </button>
+
+
+          <button
+            class="rounded h-10 px-4 text-semibold bg-white text-orange-brown-500 gap-y-4  hover:bg-white duration-300 border focus:shadow-outline ">
+            business
+          </button>
+
+          <button
+            class="rounded h-10 px-4 text-semibold bg-white text-orange-brown-500 gap-y-4  hover:bg-white duration-300 border focus:shadow-outline">
+            Finance
+          </button>
+        </div>
+
+
+        <div class="hidden md:flex md:space-x-2">
+          <button
+            class="rounded h-10 px-4 text-semibold bg-white text-orange-brown-500 gap-y-4  hover:bg-white duration-300 border focus:shadow-outline ">
+
+            Food & Drink
+          </button>
+
+
+          <button
+            class="md:rounded md:h-10 md:px-4 md:text-semibold md:bg-white md:text-orange-brown-500 md:gap-y-4  md:hover:bg-white md:duration-300 md:border md:focus:shadow-outline ">
+            Podcasts
+          </button>
+        </div>
+
+
+        <div class=" hidden md:flex md:space-x-2">
+          <button
+            class="md:rounded md:h-10 md:px-4 md:text-semibold md:bg-white md:text-orange-brown-500 md:gap-y-4  md:hover:bg-white md:duration-300 md:border md:focus:shadow-outline ">
+            Sports
+          </button>
+
+          <button
+            class="md:rounded md:h-10 md:px-4 md:text-semibold md:bg-white md:text-orange-brown-500 md:gap-y-4  md:hover:bg-white md:duration-300 md:border md:focus:shadow-outline">
+            Faith
+          </button>
+
+
+
+          <button
+            class="md:rounded md:h-10 md:px-4 md:text-semibold md:bg-white md:text-orange-brown-500 md:gap-y-4  md:hover:bg-white md:duration-300 md:border md:focus:shadow-outline ">
+            News
+          </button>
+        </div>
+
+
+        <div class="hidden md:flex md:space-x-2">
+          <button
+            class="md:rounded md:h-10 md:px-4 md:text-semibold md:bg-white md:text-orange-brown-500 md:gap-y-4  md:hover:bg-white md:duration-300 md:border md:focus:shadow-outline ">
+            Music
+          </button>
+
+          <button
+            class="md:rounded md:h-10 md:px-4 md:text-semibold md:bg-white md:text-orange-brown-500 md:gap-y-4  md:hover:bg-white md:duration-300 md:border md:focus:shadow-outline  ">
+            Comics
+          </button>
+
+          <button
+            class="md:rounded md:h-10 md:px-4 md:text-semibold md:bg-white md:text-orange-brown-500 md:gap-y-4  md:hover:bg-white md:duration-300 md:border md:focus:shadow-outline  ">
+            Crypto
+          </button>
+        </div>
+
+        <div class="hidden md:flex md:space-x-2 ">
+          <button
+            class="md:rounded md:h-10 md:px-4 md:text-semibold md:bg-white md:text-orange-brown-500 md:gap-y-4  md:hover:bg-white md:duration-300 md:border md:focus:shadow-outline ">
+            Art &Illustration
+          </button>
+
+          <button
+            class="md:rounded md:h-10 md:px-4 md:text-semibold md:bg-white md:text-orange-brown-500 md:gap-y-4  md:hover:bg-white md:duration-300 md:border md:focus:shadow-outline ">
+            Climate
+          </button>
+
+        </div>
+
+        <div class="flex space-x-2 ">
+
+          <button
+            class="rounded h-10 px-4 text-semibold bg-white text-orange-brown-500 gap-y-4  hover:bg-white duration-300 border focus:shadow-outline md:hidden">
+
+            Food & Drink
+          </button>
+
+          <div
+            class="rounded h-8 grid justify-center items-center px-2 text-semibold bg-white text-orange-brown-500 gap-y-4  hover:bg-white duration-300 border focus:shadow-outline ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+    <!--Content--->
+    <div class=" grid items-center justify center p-4">
+      <div class="flex md:mt-20 mt-4">
+        <img
+          src="https://cdn.substack.com/image/fetch/w_392,h_392,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb466dfcf-9efc-4ee8-997a-4522788c2df3_500x500.png"
+          class=" h-12 w-12 md:h-24 md:w-24 mt-1 ml-4 border-2">
+
+        <div
+          class="w-full  ml-8 border-b pb-8  text-orange-brown-500 gap-y-4> Padma Lakshmi The author and television host stated her substack">
+          Stained Page News Quality soccer journalism, analysis and opinions with an American focus from someone who has
+          covered the sport for more than two decades</div>
+
+      </div>
+
+
+      <div class="flex mt-10 ">
+
+        <img
+          src="https://cdn.substack.com/image/fetch/w_392,h_392,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F40b73d36-7447-4f52-83b5-4bbf44b9324a_1200x1200.png"
+          class="  h-12 w-12 md:h-24 md:w-24 border-2  ml-4 mt-1">
+
+        <div class=" w-full ml-8 pb-8 border-b  text-orange-brown-500 gap-y-4"> The AP (Alex Pareene) Newsletter Quality
+          soccer journalism, analysis and opinions with an American focus from someone who has covered the sport for
+          more than two decades</div>
+
+      </div>
+
+
+
+      <div class="flex mt-10">
+        <img
+          src="https://cdn.substack.com/image/fetch/w_392,h_392,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F52ece968-2949-4aa9-9434-4ce542dddb95_256x256"
+          class="h-12 w-12 md:h-24 md:w-24  border-2  ml-4 mt-1">
+
+        <div class=" w-full  ml-8 border-b pb-8  text-orange-brown-500 gap-y-4 "> Starship Casual We read, annotate, and
+          discuss one great article every month on race, education, or culture--along with the author. Join us! By Mark
+          Isero. Launched 4 years ago $4/month</div>
+      </div>
+
+
+      <div class="flex mt-10">
+        <img
+          src=" https://cdn.substack.com/image/fetch/w_392,h_392,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F3e4909fb-2f34-40a5-9e26-2b9fb6da3ba4_302x302.png"
+          class="h-12 w-12 md:h-24 md:w-24 mt-1 ml-4 border-2">
+
+        <div class=" w-full  ml-8 border-b pb-8  text-orange-brown-500 gap-y-4 "> The Gradient A personal place for us
+          to share recipes, wisdom, laughter, and everything in between0 Lau0hed 2 months ago. $2/month</div>
+      </div>
+
+
+      <div class="flex mt-10">
+        <img
+          src=" https://cdn.substack.com/image/fetch/w_392,h_392,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F1b343c2b-662e-41b2-94b2-7c7874dc523d_256x256.png"
+          class=" h-12 w-12 md:h-24 md:w-24 mt-1 ml-4 border-2">
+
+
+        <div class=" w-full  ml-8 border-b pb-8  text-orange-brown-500 gap-y-4 "> Letters from an American Quality
+          soccer journalism, analysis and opinions with an American focus from someone who has covered the sport for
+          more than two decades</div>
+      </div>
+
+
+      <div class="flex mt-10">
+        <img
+          src="https://cdn.substack.com/image/fetch/w_392,h_392,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F40b73d36-7447-4f52-83b5-4bbf44b9324a_1200x1200.png  "
+          class=" h-12 w-12 md:h-24 md:w-24 mt-1 ml-4 border-2">
+        <div class=" w-full  ml-8 border-b pb-8  text-orange-brown-500 gap-y-4 "> Stained Page News Quality soccer
+          journalism, analysis and opinions with an American focus from someone who has covered the sport for more than
+          two decades</div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--Twitter  button-->
+
+  <div class="flex p-4 justify-center  border-b md:mr-64">
+
+    <button class="h-14 px-4 bg-blue-400 text-white ">
+      <a class="twitter" href="#">
+        <i class="fab fa-twitter"></i>
+        <span>Find writers I know</span>
+      </a>
+    </button>
+  </div>
+
+
+
+
+
+
+  <div class="border-b pb-4">
+
+
+    <div class="text-center  mt-20 flex justify-center flex-col fontFamily-Poppins text-orange-brown-500  md:pl-16 ">
+      <p class="text-2xl ">“There’s something wonderful about writing just for readers.
+        Because your people are there, you have to be accountable, but
+        it’s a very pure relationship.”</p>
+      <p class="text-light mt-8 mb-10 flex justify-center text-orange-brown-500 gap-y-4 ">– Andrew Sullivan, The Weekly
+        Dish</p>
+    </div>
+
+
+
+
+    <div class="flex justify-center  mb-24">
+      <button class="h-12 px-4 bg-orange-500 text-white">Get started</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!--images-->
+
+
+  <div class="border-b pb-20 ">
+
+    <div class="pt-20 lg:flex lg:justify-center">
+      <div> <img
+          src="https://cdn.substack.com/image/fetch/w_520,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Fhome_page%2Ftelescope.png"
+          class="w-56 ml-4 md:ml-28 "> </div>
+
+      <div class="pt-8 flex  flex-col lg:max-w-prose pl-8">
+        <div class=" text-orange-brown-500 gap-y-4 font-medium text-4xl"> A new model for writing.</div>
+        <div class="bg-white-fontFamily-Poppins  text-orange-brown-500 gap-y-4  mt-2 ">The subscription model rewards
+          you for doing great work that you
+          believe in.You don’t need to play by the rules of social media to
+          succeed.</div>
+
+      </div>
+    </div>
+
+    <div class="pt-24 lg:flex lg:justify-center lg:flex-row-reverse md:p-12">
+      <div> <img
+          src="https://cdn.substack.com/image/fetch/w_520,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Fhome_page%2Flightbulb.png"
+          class="w-72 ml-10 md:ml-28 lg:ml-2"></div>
+
+      <div class="pt-8 flex  flex-col  lg:max-w-prose p-12 mt-6">
+        <div class=" text-orange-brown-500 gap-y-4 font-medium text-3xl"> Simple but powerful publishing.</div>
+        <div class="bg-white-fontFamily-Poppins  text-orange-brown-500 gap-y-4  mt-2 ">Spend all your time and energy
+          focused on the work that really
+          matters: the writing itself. Substack takes care of everything else.</div>
+
+      </div>
+    </div>
+
+
+    <div class="md:pt-20 lg:flex lg:justify-center">
+      <div><img
+          src="https://cdn.substack.com/image/fetch/w_520,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Fhome_page%2Flock.png"
+          class="w-56 ml-10 md:ml-28 lg:ml-2"></div>
+
+      <div class="pt-8 flex  flex-col lg:max-w-prose p-12">
+        <div class="text-orange-brown-500 gap-y-4 font-medium text-3xl "> Own your work.</div>
+
+        <div>
+          <div class="bg-white-fontFamily-Poppins  text-orange-brown-500 gap-y-4  mt-2"> On Substack, you own your
+            content, your IP, and your mailing list
+            – forever. You can leave and take it all with you at any time.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="border-b pb-20">
+    <p
+      class="bg-white-fontFamily-Poppins text-2xl text-center text-orange-brown-500 gap-y-4  mt-20 md:pl-52 md:pr-64 pl-12 pr-10 leading-10">
+      “In 2020, Substack became the standard of the independent journalism
+      industry. Not to move would be to capitulate to
+      deliberate obsolescence”</p>
+
+    <a class="text-light mt-8 mb-10 flex justify-center text-orange-brown-500 gap-y-4 ">– David Warsh, Economic
+      Principals</a>
+
+  </div>
+
+
+
+
+
+  <!--content above the calculation-->
+
+  <div class=" p-16 lg:p-10 grid gap-11  items-center justify-center w-full lg:flex  lg:flex-row  border-b ">
+
+    <div
+      class="fontFamily-Poppins mt-10 text-center lg:text-left  flex justify-center lg:justify-start flex-col fontFamily-Poppins text-orange-brown-500 gap-y-1 h-76">
+      <p class="text-4xl">A media business in </p>
+      <p class=" text-4xl">minutes. </p>
+      <p class="text-base  mt-4">We make subscription publishing simple. Start your </p>
+      <p class="text-base">Substack at breakfast; start bringing in revenue by</p>
+      <p class="text-base">lunchtime. </p>
+      <div class=" flex justify-center ml-6"> <button class="h-12 w-32 border mr-6 mb-10 mt-6"> Learn more</button>
+      </div>
+    </div>
+
+
+
+
+    <!--form-->
+
+    <div class=" pb-8   lg:mt-20">
+      <div class=" h-auto w-full py-4 px-4 mb-16 border border-gray-300 border-opacity-25% rounded-sm ">
+        <form class="p-2">
+
+          <div class="text-orange-brown-500 flex flex-col mb-6 text-lg ml-2 font-bold md:text-right  h-10  mt-2 ">
+            <p>Estimate what you could make on </p>
+            <p>Substack</p>
+          </div>
+
+          <div class="pr-2 pl-2">
+            <select
+              class=" bg-white form-select h-12 font-bold text-right mb-2  relative focus-within:text-orange-brown-500  w-96  border border-gray text-orange-brown-500 gap-y-4 p-2">
+              <option>50 subscribers</option>
+              <option>100 subscribers</option>
+              <option>200 subscribers</option>
+              <option>400 subscribers</option>
+              <option>800 subscribers</option>
+              <option>2000 subscribers</option>
+              <option>5000 subscribers</option>
+              <option>10000 subscribers</option>
+              <option>50000 subscribers</option>
+            </select>
+          </div>
+
+
+          <div class="pr-2 pl-2">
+
+            <select
+              class="bg-white form-select h-12 font-bold text-right mb-2  mt-2 relative focus-within:text-orange-brown-500  w-96  border border-gray text-orange-brown-500 gap-y-4 p-2">
+              <option>$20/month</option>
+              <option>$25/month</option>
+              <option>$15/month</option>
+              <option>$10/month</option>
+            </select>
+
+          </div>
+
+          <div class="flex items-center mt-6">
+
+            <div class="font-bold text-4xl ml-2 text-orange-brown-500 gap-y-4"> $1,000 <span
+                class="text-sm font-base ">per month</span></div>
+
+          </div>
+
+
+          <div class="pr-2 pl-2">
+            <button type="submit" class="bg-orange-500 w-96 mt-8  h-12 text-white font-medium ">
+              Get started
+            </button>
+            <div class="text-orange-brown-500 gap-y-4 text-sm text-center font-base mt-2">
+
+              <p>Writers keep 90% of their revenue minus credit card </p>
+              <p>fees.</p>
+            </div>
+          </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+  <div
+    class=" pb-4 flex flex-col bg-white-fontFamily-Poppins text-2xl text-center text-orange-brown-500 gap-y-4  mt-20 md:pl-52 md:pr-64 pl-12 pr-10  leading-10 mx-auto">
+    <p>“When you look at the economics of newsletters... If you can
+      find 10,000 people to pay you $100 a year, you’re making $1
+      million a year. No one in media is going to pay you that.”</p>
+  </div>
+
+  <div class="border-b"> <a class="text-light mt-4 mb-20 flex justify-center text-orange-brown-500 ">– Casey Newton,
+      Platformer</a>
+  </div>
+
+
+  <div
+    class=" flex justify-center pr-4 pl-16 flex-col text-center text-3xl mt-32 mb-2 text-orange-brown-500 gap-y-4 md:ml-96 md:mr-96">
+    <p>For the soon-to-be discovered and the already well-known.</p>
+
+  </div>
+
+
+  <div
+    class=" flex justify-center text-center  flex-col  mb-2 text-base mt-4 text-orange-brown-500 gap-y-4 pl-6 md:ml-96 md:mr-96">
+    Substack’s simple product, business model, and creator-friendly terms has triggered an explosion of new creative
+    work.</div>
+
+
+
+
+  <div class="  lg:flex lg:flex-row-reverse lg:ml-24 lg:mt-16  pb-20 border-b">
+
+    <div class="md:mt-20 md:ml-10 md:pl-6 md:pr-6 ml-10 mr-16 max-width-full h-auto">
+      <div><img
+          src="https://cdn.substack.com/image/fetch/w_1224,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Fhome_page%2Fpodcast.png"
+          class="w-full h-18 mb-20 object-cover"></div>
+    </div>
+
+
+
+
+    <div class=" w-full lg:w-1/2">
+
+
+
+      <div class="flex flex-row justify-between border-b pt-6 pb-6  ">
+
+
+        <div class="ml-4">
+          <p class="font-bold text-orange-brown-500 text-xl mb-2">Podcasting on Substack</p>
+          <p class="text-orange-brown-500 "> Pioneering subscription-backed audio </p>
+        </div>
+        <!-- Heroicon name: solid/chevron-down -->
+
+
+
+        <div class=" flex justify-end ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 font-light text-orange-brown-500 gap-y-4" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+      </div>
+
+
+
+
+      <div class="flex flex-row justify-between border-b pt-6 pb-6  ">
+
+
+        <div class="ml-4">
+          <p class="font-bold text-orange-brown-500 text-xl mb-2">Bloggers on Substack </p>
+          <p class="text-orange-brown-500 "> Transfer blogs to substack & unlock subscriptions</p>
+        </div>
+        <div class=" flex justify-end ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 font-light text-orange-brown-500 gap-y-4" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="flex flex-row justify-between border-b pt-6 pb-6  ">
+
+
+
+        <div class="ml-4">
+          <p class="font-bold text-orange-brown-500 text-xl mb-2"> Investing and business writing</p>
+
+          <p class="text-orange-brown-500 ">An obvious match for the subscription model </p>
+        </div>
+        <!-- Heroicon name: solid/chevron-down -->
+
+        <div class=" flex justify-end ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 font-light text-orange-brown-500 mt-4" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="flex flex-row justify-between border-b pt-6 pb-6  ">
+
+
+        <div class="ml-4">
+          <p class="font-bold text-orange-brown-500 text-xl mb-2"> Comic books</p>
+          <p class="text-orange-brown-500 ">Join the world's best comic book creators </p>
+        </div>
+        <!-- Heroicon name: solid/chevron-down -->
+        <div class=" flex justify-end ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 font-light text-orange-brown-500 gap-y-4" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="flex flex-row justify-between  pb-18  pt-6  ">
+
+        <div class="ml-4">
+          <p class="font-bold text-orange-brown-500 text-xl mb-2"> Local news reporting</p>
+          <p class="text-orange-brown-500 ">A sustainable model for local journalism</p>
+        </div>
+        <!-- Heroicon name: solid/chevron-down -->
+        <div class=" flex justify-end ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 font-light text-orange-brown-500 gap-y-4" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="border-b">
+    <div
+      class="text-center flex-col justify-center items-center text-4xl text-orange-brown-500 gap-y-4 pt-10 mb-10 flex flex-col-3">
+      Join the new wave of writers and creators.</div>
+
+    <div class="flex justify-center text-center text-light pt-2 text-orange-brown-400">“Substack changed my life.” -
+      Lenny Rachitsky, Lenny’s Newsletter</div>
+    <div class="flex justify-center mb-8 p-10">
+      <button class="h-12 px-4 bg-orange-500 text-white mt-4 flex-justify-center"> Start Writing</button>
+    </div>
+  </div>
+
+
+  <div class=" lg:flex lg:flex-row justify-center  space-y-10 p-10  space-x-24  mt-6">
+
+
+
+    <div class="lg:flex lg:flex-row-reverse  ">
+
+      <ul class="space-y-2  space-x-24">
+        <li class="font-bold hidden text-orange-brown-500 gap-y-4 md:mt-10 ">Read </li>
+        <li class="font-bold text-orange-brown-500 gap-y-4 lg:hidden">Read </li>
+        <li class="text-orange-brown-500 gap-y-4">Discover newsletters </li>
+        <li class="text-orange-brown-500 gap-y-4">Reader app </li>
+        <li class="text-orange-brown-500 gap-y-4">Top in culture</li>
+        <li class="text-orange-brown-500 gap-y-4">Top in food & drink</li>
+        <li class="text-orange-brown-500 gap-y-4">Top in finance</li>
+        <li class="text-orange-brown-500 gap-y-4">Top in sports</li>
+        <li class="text-orange-brown-500 gap-y-4">Top in Politics</li>
+        <li class="text-orange-brown-500 gap-y-4">Top in technology</li>
+        <li class="text-orange-brown-500 gap-y-4">Top in faith</li>
+        <li class="text-orange-brown-500 gap-y-4">Top in business</li>
+
+      </ul>
+
+
+      <div class="mt-10 hidden md:block md:mr-6 md:mt-10">
+        <div> <img
+            src="https://cdn.substack.com/image/fetch/w_56,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Fsubstack-nomargin.png"
+            class="h-8"> </div>
+        <div>
+          &copy 2021 Substack inc. </div>
+
+        <div> Substack is the home for great writing. </div>
+
+
+        <div class="mt-2">
+          <p>See</p>
+          <a href="https://substack.com/privacy">Privacy,</a>
+          <a href="https://substack.com/privacy"> Terms,and</a>
+          <a href="https://substack.com/privacy"> Information,</a><br>
+          <a href="https://substack.com/privacy"> Collection-notice.</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div>
+      <h2 class="font-bold text-orange-brown-500 gap-y-4">Writers </h2>
+
+
+      <ul class="space-y-2">
+        <li class="text-orange-brown-500 gap-y-4">Switch to Substack</li>
+        <li class="text-orange-brown-500 gap-y-4">Comic book creators</li>
+        <li class="text-orange-brown-500 gap-y-4">Substack for podcasts</li>
+        <li class="text-orange-brown-500 gap-y-4">Switch to finance</li>
+        <li class="text-orange-brown-500 gap-y-4">Substack for bloggers</li>
+      </ul>
+    </div>
+
+
+
+    <div>
+      <h2 class="font-bold text-orange-brown-500 gap-y-4">Company </h2>
+      <ul class="space-y-2">
+        <li class="text-orange-brown-500 gap-y-4">About</li>
+        <li class="text-orange-brown-500 gap-y-4">Help</li>
+        <li class="text-orange-brown-500 gap-y-4">Jobs</li>
+        <li class="text-orange-brown-500 gap-y-4">Blog</li>
+      </ul>
+    </div>
+
+
+    <div class="mt-10">
+      <h2 class="font-bold text-orange-brown-500 gap-y-4">Resources</h2>
+      <ul class="space-y-2">
+        <li class="text-orange-brown-500 gap-y-4">Go paid</li>
+        <li class="text-orange-brown-500 gap-y-4">Guides & resources</li>
+        <li class="text-orange-brown-500 gap-y-4">Substack Grow</li>
+        <li class="text-orange-brown-500 gap-y-4">Help</li>
+        <li class="text-orange-brown-500 gap-y-4">Events</li>
+      </ul>
+    </div>
+
+
+    <div class="mt-10 sm:hidden text-orange-brown-500">
+      <div> <img
+          src="https://cdn.substack.com/image/fetch/w_56,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Fsubstack-nomargin.png"
+          class="h-8"> </div>
+      <div>
+        &copy 2021 Substack inc. </div>
+
+      <div> Substack is the home for great writing. </div>
+
+
+      <div class="mt-2 text-orange-brown-500">
+        <p>See</p>
+        <a href="https://substack.com/privacy">Privacy,</a>
+        <a href="https://substack.com/privacy"> Terms,and</a>
+        <a href="https://substack.com/privacy"> Information,</a><br>
+        <a href="https://substack.com/privacy"> Collection-notice.</a>
+      </div>
+    </div>
+
+
+
+  </div>
+</body>
+
+</html>
